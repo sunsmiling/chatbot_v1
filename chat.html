@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <title>Chat</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Groot</h1>
+        </div>
+    </header>
+
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">Friday, May 1, 2020 </span>
+            <li class="incoming-message message">
+                <img src="images/profile_1.jpg" class="g-avater message__avater" />
+                <div class="message__content">
+                    <span class="message__author">Groot</span>
+                    <div class="message__bubble">
+                        Hi, I'm groot.
+                    </div>
+                </div>
+                <span class="message_timestamp"></span>
+            </li>
+            <li class="incoming-message message">
+                <span class="message_timestamp"></span>
+                <div class="message__content">
+                    <div class="message__bubble">
+                        Hi, I'm groot.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div class="chat__write--container">
+        <input
+          type="text"
+          class="chat__write"
+          placeholder="Send message"
+          class="chat__write-input"
+        />
+  
+        <div class="chat__icon-left chat__icon">
+          <i class="far fa-plus-square"></i>
+        </div>
+  
+        <div class="chat__icon-right chat__icon">
+          <span class="chat__write-icon">
+            <i class="far fa-smile-wink"></i>
+          </span>
+          <span class="chat__write-icon">
+            <i class="fas fa-microphone"></i>
+          </span>
+        </div>
+      </div>
+  
+</body>
+</html>
