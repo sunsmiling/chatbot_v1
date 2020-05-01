@@ -9,10 +9,12 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Chat</title>
 </head>
-<body>
+<body class="chats-body">
+  <script src="script2.js"></script>
     <header class="header">
         <div class="header__header-column">
           <a href="index.html" class="header__back-btn">
@@ -22,26 +24,36 @@
         </div>
     </header>
 
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Friday, May 1, 2020 </span>
             <li class="incoming-message message">
-                <img src="images/profile_1.jpg" class="g-avater message__avater" />
+              <img src="images/profile_1.jpg" class="m-avater message__avater" />
                 <div class="message__content">
+                    <span class="message__bubble">
+                        What can I help you?
+                    </span>
                     <span class="message__author">Groot</span>
+                </div>
+                <span class="message_timestamp">4:20 AM</span>
+            </li>
+            <li class="sent-message message">
+                <span class="message_timestamp"></span>
+                <div class="message__content">
                     <div class="message__bubble">
-                        Hi, I'm groot.
+                        Hi, Are you real?
                     </div>
                 </div>
-                <span class="message_timestamp"></span>
             </li>
             <li class="incoming-message message">
-                <span class="message_timestamp"></span>
+              <img src="images/profile_1.jpg" class="m-avater message__avater" />
                 <div class="message__content">
-                    <div class="message__bubble">
-                        Hi, I'm groot.
-                    </div>
+                    <span class="message__bubble">
+                        I am groot!
+                    </span>
+                    <span class="message__author">Groot</span>
                 </div>
+                <span class="message_timestamp">4:20 AM</span>
             </li>
         </ul>
     </main>
@@ -49,10 +61,12 @@
         <input
           type="text"
           class="chat__write"
+          id="chatbox"
           placeholder="Send message"
           class="chat__write-input"
+          onfocus="placeHolder()"
         />
-  
+
         <div class="chat__icon-left chat__icon">
           <i class="far fa-plus-square"></i>
         </div>
@@ -65,7 +79,12 @@
             <i class="fas fa-microphone"></i>
           </span>
         </div>
+
       </div>
+  <div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small! </span>
+  </div>
+  
   
 </body>
 </html>
